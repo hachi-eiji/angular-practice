@@ -1,1 +1,6 @@
-<ng-template appUsers></ng-template>
+<ng-container *ngIf="isTeacher">
+  <app-teacher></app-teacher>
+</ng-container>
+<ng-container *ngIf="!isTeacher">
+  <app-student></app-student>
+</ng-container>
